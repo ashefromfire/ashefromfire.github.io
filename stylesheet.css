@@ -8,7 +8,11 @@
 }
 
 h1 {
-    font-size: 200px;
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 100px;
 }
 
 body {
@@ -16,11 +20,15 @@ body {
     text-align: center;
     padding: 50px;
     color: #0e0024;
+}
 
+.hero-image {
     background-image: url("img/pixelated_background.png");
     background-repeat: no-repeat;
     background-color: #8300cf;
     background-position: top;
+    width: 100%
+    aspect-ratio: 16/9;
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
