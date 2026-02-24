@@ -12,7 +12,7 @@ body {
     background-image: url("img/pixelated_background.png");
     background-repeat: no-repeat;
     background-color: #8300cf;
-    background-position: center;
-    height: 100vh;
+    background-position: top;
+    width: 100vw;
     margin: 0;
 }
