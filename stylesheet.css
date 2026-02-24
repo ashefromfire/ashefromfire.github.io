@@ -15,6 +15,7 @@ body {
     font-family: pixelFont;
     text-align: center;
     color: #0e0024;
+    margin: 0;
 }
 
 .hero-image {
