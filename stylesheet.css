@@ -3,33 +3,71 @@
     src: url(fonts/DTM-Mono.otf);
 }
 
-.title {
-    padding: 200px;
-}
-
-
-h1 {
-    font-size: 150px;
-}
-
-h2 {
-    font-size: 100px;
-}
-
 body {
     font-family: pixelFont;
     text-align: center;
+    background-color: #ffe2cb;
     color: #0e0024;
 
-    /* hero image */
-    background-image: url("img/pixelated_background.png");
-    background-repeat: no-repeat;
-    background-color: #8300cf;
-    background-position: top;
-    width: 100wh;
-    margin: 0;
-    background-size: cover;
+
+    /* Making the pixelated images smooth */
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
+
+    /* Hero image */
+    background-image: url("img/pixelated_background.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
+
+* {
+    box-sizing:border-box;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+.title {
+    padding: 10vw;
+}
+
+.left {
+    padding:20px;
+    float:left;
+    width:33.3%; /* The width is 20%, by default */
+  }
+  
+.main {
+    padding:20px;
+    float:left;
+    width:33.3%; /* The width is 60%, by default */
+  }
+  
+.right {
+    padding:20px;
+    float:left;
+    width:33.3%; /* The width is 20%, by default */
+  }
+  
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width:1000px) {
+   .left  , .main, .right {width:100%;}
+  }
+
+.frame {
+    background-color: #ffe2cb;
+    padding: 0;
+}
+
+.frame img{
+    background-image: url("img/image_holder.png");
+    background-repeat: no-repeat;
+    background-color: #8300cf;
+    width: 100%
+  }
