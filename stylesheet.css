@@ -3,6 +3,11 @@
     src: url(fonts/DTM-Mono.otf);
 }
 
+.title {
+    padding: 200px;
+}
+
+
 h1 {
     font-size: 150px;
 }
